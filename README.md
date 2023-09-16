@@ -45,3 +45,15 @@ SELECT * FROM employee_info;
 SELECT DAYNAME(Date_of_Entry) FROM Employee_Info;
 
 ![SQL TASK 2(01)](https://github.com/Tonyigba/SQL-TASK1-AND-2/assets/143624967/0635292e-c399-42fe-bd9a-1bbeedea09b2)
+
+
+
+
+USE STAFF;
+
+SELECT * FROM staff.employee_info;
+
+-- RUNNING CODE THE RETURNED ONLY YEAR IN THE DATE OF ENTRY
+
+SELECT YEAR(Date_of_Entry) FROM Employee_Info;![Changing ID cplumn](https://github.com/Tonyigba/SQL-TASK1-AND-2/assets/143624967/0ec11a48-e93e-4ed9-a63a-ae7104ed8a47)
+
