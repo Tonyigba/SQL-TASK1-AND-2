@@ -17,6 +17,7 @@ SELECT NAME, DATE_ADD(DATE_OF_ENTRY, INTERVAL 10 YEAR) FROM Employee_Info;
 UPDATE Employee_Info 
 SET Date_of_Exit =DATE_ADD(DATE_OF_ENTRY, INTERVAL 10 YEAR);
 
+![Adding 10 row to the table staff_info](https://github.com/Tonyigba/SQL-TASK1-AND-2/assets/143624967/b453753c-b82c-4081-a54c-1294c7e2839c)
 
 ![SQL TASK 2(00)](https://github.com/Tonyigba/SQL-TASK1-AND-2/assets/143624967/ae3b0f50-63ab-4a9b-8c20-abb37129c0f6)
 
@@ -44,6 +45,10 @@ SELECT * FROM employee_info;
 
 SELECT DAYNAME(Date_of_Entry) FROM Employee_Info;
 
+
+![Code returning only dayname](https://github.com/Tonyigba/SQL-TASK1-AND-2/assets/143624967/330193b9-4f6e-466e-978e-7c000ac165a3)
+
+
 ![SQL TASK 2(01)](https://github.com/Tonyigba/SQL-TASK1-AND-2/assets/143624967/0635292e-c399-42fe-bd9a-1bbeedea09b2)
 
 
@@ -53,7 +58,25 @@ USE STAFF;
 
 SELECT * FROM staff.employee_info;
 
--- RUNNING CODE THE RETURNED ONLY YEAR IN THE DATE OF ENTRY
+-- RUNNING CODE THAT RETURNED ONLY YEAR IN THE DATE OF ENTRY
 
-SELECT YEAR(Date_of_Entry) FROM Employee_Info;![Changing ID cplumn](https://github.com/Tonyigba/SQL-TASK1-AND-2/assets/143624967/0ec11a48-e93e-4ed9-a63a-ae7104ed8a47)
+SELECT YEAR(Date_of_Entry) FROM Employee_Info;
+
+
+![CODE returning only year of entry](https://github.com/Tonyigba/SQL-TASK1-AND-2/assets/143624967/b00d0736-3430-4bc3-8c08-4f2acac5eaf5)
+
+
+USE STAFF;
+
+SELECT * FROM employee_info;
+
+ALTER TABLE Employee_Info CHANGE ID Employee_ID INT;
+
+-- CHANGING THE ID COLUMN TO Employee_ID
+
+
+![Changing table name from staff_info to Employee_info](https://github.com/Tonyigba/SQL-TASK1-AND-2/assets/143624967/239c7405-b1f5-4de5-b855-8ae62c129c36)
+
+
+![Changing ID cplumn](https://github.com/Tonyigba/SQL-TASK1-AND-2/assets/143624967/0ec11a48-e93e-4ed9-a63a-ae7104ed8a47)
 
